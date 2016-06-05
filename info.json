@@ -1,0 +1,10 @@
+{
+  "name": "InfiTech",
+  "version": "0.0.1",
+  "title": "InfiTech",
+  "author": "Reika",
+  "contact": "",
+  "homepage": "",
+  "description": "Adds infinite-versions of some of the progressive techs to keep research going indefinitely and add ongoing cost with actual rewards.",
+  "dependencies": ["base >= 0.12.0"]
+}
