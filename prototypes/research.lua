@@ -16,7 +16,7 @@ end
 
 s = 5
 for i=s,max do
-	local tech = create_Tech(i, s, "research-effectivity", 0, 2)
+	local tech = create_Tech(i, s, "research-speed", 0, 2)
 	if tech ~= nil then
 		data:extend(
 		{
@@ -24,7 +24,7 @@ for i=s,max do
 		})
 	end
 end
-
+--[[
 s = 5
 for i=s,max do
 	local tech = create_Tech(i, s, "inserter-stack-size-bonus", 100, 1.1)
@@ -35,10 +35,22 @@ for i=s,max do
 		})
 	end
 end
+--]]
+
+s = 8
+for i=s,max do
+	local tech = create_Tech(i, s, "inserter-capacity-bonus", 200, 1.0)
+	if tech ~= nil then
+		data:extend(
+		{
+		  tech
+		})
+	end
+end
 
 s = 6
 for i=s,max do
-	local tech = create_Tech(i, s, "logistic-robot-speed", 250, 2)
+	local tech = create_Tech(i, s, "worker-robots-speed", 250, 2)
 	if tech ~= nil then
 		data:extend(
 		{
@@ -49,7 +61,7 @@ end
 
 s = 4
 for i=s,max do
-	local tech = create_Tech(i, s, "logistic-robot-storage", 150, 1.25)
+	local tech = create_Tech(i, s, "worker-robots-storage", 150, 1.25)
 	if tech ~= nil then
 		data:extend(
 		{
@@ -66,6 +78,73 @@ for i=s,max do
 		{
 		  tech
 		})
+	end
+end
+
+s = 7
+for i=s,max do
+	local tech = create_Tech(i, s, "flamethrower-damage", 100, 1.25)
+	if tech ~= nil then
+		data:extend(
+		{
+		  tech
+		})
+	end
+end
+
+for i=s,max do
+	local tech = create_Tech(i, s, "bullet-damage", 100, 1.25)
+	if tech ~= nil then
+		data:extend(
+		{
+		  tech
+		})
+	end
+end
+
+for i=s,max do
+	local tech = create_Tech(i, s, "grenade-damage", 0, 1.5)
+	if tech ~= nil then
+		data:extend(
+		{
+		  tech
+		})
+	end
+end
+
+for i=s,max do
+	local tech = create_Tech(i, s, "shotgun-shell-damage", 100, 1.1)
+	if tech ~= nil then
+		data:extend(
+		{
+		  tech
+		})
+	end
+end
+
+if data.raw.technology["character-inventory-slots-1"] then
+	s = 4
+	for i=s,max do
+		local tech = create_Tech(i, s, "character-inventory-slots", 50, 1.05)
+		if tech ~= nil then
+			data:extend(
+			{
+			  tech
+			})
+		end
+	end
+end
+
+if data.raw.technology["crafting-speed-upgrade-1"] then
+	s = 21
+	for i=s,max do
+		local tech = create_Tech(i, s, "crafting-speed-upgrade", 100, 1.1)
+		if tech ~= nil then
+			data:extend(
+			{
+			  tech
+			})
+		end
 	end
 end
 
@@ -118,43 +197,4 @@ if Config.turretResearch then
 			end
 		end
 	end
-end
-
-if Config.evoResearch then
-	data:extend(
-	{
-		{
-		type = "technology",
-		name = "evo-factor", -- was evo-factor-1
-		icon = "__InfiTech__/graphics/evotech.png",
-		prerequisites =
-		{
-		  "alien-technology",
-		},
-		unit =
-		{
-		  count = 1000,
-		  ingredients =
-		  {
-			{"science-pack-1", 1},
-			{"science-pack-2", 1},
-			{"science-pack-3", 2},
-			{"alien-science-pack", 4},
-		  },
-		  time = 1200
-		},
-		upgrade = true,
-		order = "a-f",
-		icon_size = 128,
-	  },
-	})
-	--[[
-	for i=2,2000 do
-		local tech = create_Tech(i, s, "evo-factor", 0, 1)
-		data:extend(
-		{
-		  tech
-		})
-	end
-	--]]
 end
