@@ -30,4 +30,8 @@ if Config.evoResearch then
 		icon_size = 128,
 	  },
 	})
+	
+	if data.raw.tool["biter-flesh"] then
+		table.insert(data.raw.technology["evo-factor"].unit.ingredients, {"biter-flesh", 5})
+	end
 end

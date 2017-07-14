@@ -12,18 +12,18 @@ script.on_event(defines.events.on_research_finished, function(event)
 			
 			--reset tech so it can be researched again, ad infinitum
 			--does not work--game.player.force.technologies['evo-factor'].researched=false
-			reset_evo_factor = true
+			reset_evo_factor = true--[[
 		elseif stringStarts(event.research.name, "crafting-speed-upgrade") then
 			local lvl = getTechLevel(event.research.name)
 			--game.print(lvl)
 			event.research.force.manual_crafting_speed_modifier = math.max(1+0.2*lvl, event.research.force.manual_crafting_speed_modifier)--corrected formula to match the names 0.1*math.floor(lvl^1.2)
-			--game.print(event.research.force.manual_crafting_speed_modifier)
+			--game.print(event.research.force.manual_crafting_speed_modifier)--]]
 		end
 	--end
 end)
 
 function reduceEvolution()  
-	reduction = math.max(0.00005, math.min(0.04, (0.25*game.forces.enemy.evolution_factor*(1-game.forces.enemy.evolution_factor)))) --more effective at lower evo factor
+	local reduction = math.max(0.00005, math.min(0.04, (0.25*game.forces.enemy.evolution_factor*(1-game.forces.enemy.evolution_factor)))) --more effective at lower evo factor
 	
 	--game.player.print("Evo factor going down by " .. reduction .. ", from " .. game.forces.enemy.evolution_factor .. " to " .. (game.forces.enemy.evolution_factor-reduction))
 	
