@@ -6,6 +6,6 @@
   "contact": "",
   "homepage": "",
   "factorio_version" : "0.15",
-  "description": "Adds infinite-versions of some of the progressive techs to keep research going indefinitely and add ongoing cost with actual rewards.",
+  "description": "Adds infinite versions of some more technologies.",
   "dependencies": ["base >= 0.15.0"]
 }
