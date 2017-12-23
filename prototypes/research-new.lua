@@ -31,6 +31,7 @@ data:extend(
       time = 60
     },
     max_level = "infinite",
+    icon_size = 128,
     upgrade = true,
     order = "e-n-g"
   },
@@ -61,6 +62,7 @@ data:extend(
       time = 30
     },
     max_level = "infinite",
+    icon_size = 128,
     upgrade = true,
     order = "c-m-d"
   },
@@ -91,6 +93,7 @@ data:extend(
       time = 60
     },
     max_level = "infinite",
+    icon_size = 128,
     upgrade = true,
     order = "c-k-g-c"
   },
@@ -121,6 +124,7 @@ data:extend(
       time = 30
     },
     max_level = "infinite",
+    icon_size = 128,
     upgrade = true,
     order = "c-k-e-f"
   },
