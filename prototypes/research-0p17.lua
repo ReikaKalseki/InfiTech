@@ -1,6 +1,6 @@
 require("functions")
 require("config")
-
+--[[
 data:extend(
 {
   {
@@ -98,7 +98,7 @@ data:extend(
     order = "c-k-g-c"
   },
 })
-
+--]]
 if not data.raw.technology["character-logistic-slots-7"] then
 data:extend({
  {

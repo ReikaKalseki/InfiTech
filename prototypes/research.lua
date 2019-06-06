@@ -83,7 +83,7 @@ end
 
 s = 7
 for i=s,max do
-	local tech = create_Tech(i, s, "flamethrower-damage", 100, 1.25)
+	local tech = create_Tech(i, s, "refined-flammables", 100, 1.25)
 	if tech ~= nil then
 		data:extend(
 		{

@@ -18,9 +18,9 @@ if Config.evoResearch then
 		  count = 100,
 		  ingredients =
 		  {
-			{"science-pack-1", 10},
-			{"science-pack-2", 7},
-			{"science-pack-3", 3},
+			{"automation-science-pack", 10},
+			{"logistic-science-pack", 7},
+			{"chemical-science-pack", 3},
 			{"space-science-pack", 1},
 		  },
 		  time = 1200

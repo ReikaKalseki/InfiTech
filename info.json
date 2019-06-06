@@ -5,7 +5,7 @@
   "author": "Reika",
   "contact": "",
   "homepage": "",
-  "factorio_version" : "0.16",
+  "factorio_version" : "0.17",
   "description": "Adds infinite versions of some more technologies.",
-  "dependencies": ["base >= 0.16.0"]
+  "dependencies": ["base", "DragonIndustries"]
 }
