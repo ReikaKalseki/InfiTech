@@ -5,17 +5,17 @@ data:extend(
 {
   {
     type = "technology",
-    name = "laser-turret-speed-8",
-    icon = "__base__/graphics/technology/laser-turret-damage.png",
+    name = "laser-shooting-speed-8",
+    icon = "__base__/graphics/technology/laser-shooting-speed.png",
     effects =
     {
       {
         type = "gun-speed",
-        ammo_category = "laser-turret",
+        ammo_category = "laser",
         modifier = 0.5
       }
     },
-    prerequisites = {"laser-turret-speed-7"},
+    prerequisites = {"laser-shooting-speed-7"},
     unit =
     {
       count_formula = "2^(L-8)*1000",

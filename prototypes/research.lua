@@ -152,7 +152,7 @@ end
 if Config.turretResearch then
 	s = 7
 	for i=s,max do
-		local tech = create_Tech(i, s, "laser-turret-damage", 100, 3.5)
+		local tech = create_Tech(i, s, "laser-damage", 100, 3.5)
 		if tech ~= nil then
 			data:extend(
 			{
@@ -163,7 +163,7 @@ if Config.turretResearch then
 
 	s = 7
 	for i=s,max do
-		local tech = create_Tech(i, s, "laser-turret-speed", 100, 3.25)
+		local tech = create_Tech(i, s, "laser-shooting-speed", 100, 3.25)
 		if tech ~= nil then
 			data:extend(
 			{
