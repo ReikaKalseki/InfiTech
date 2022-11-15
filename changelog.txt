@@ -1,0 +1,80 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.101.105
+Date: Apr 28 2021
+  Misc Changes:
+    - More 1.1 fixes
+---------------------------------------------------------------------------------------------------
+Version: 1.101.102
+Date: Mar 27 2021
+  Misc Changes:
+    - Update to 1.1
+---------------------------------------------------------------------------------------------------
+Version: 1.018.24
+Date: Nov 15 2020
+  New Features:
+    - Added research speed and worker robot capacity tech
+---------------------------------------------------------------------------------------------------
+Version: 1.018.18
+Date: Aug 10 2020
+  New Features:
+    - Added inserter capacity tech
+  Misc Changes:
+    - Unretired
+    - Update to 0.18
+---------------------------------------------------------------------------------------------------
+Version: 1.018.1
+Date: May 29 2020
+  Misc Changes:
+    - Retired
+---------------------------------------------------------------------------------------------------
+Version: 1.017.6
+Date: Jun 6 2019
+  New Features:
+    - Added and removed techs again to match 0.17
+  Misc Changes:
+    - Update to 0.17
+---------------------------------------------------------------------------------------------------
+Version: 1.016.60
+Date: Dec 23 2017
+  Misc Changes:
+    - Update to 0.16
+---------------------------------------------------------------------------------------------------
+Version: 1.015.0
+Date: Aug 8 2017
+  New Features:
+    - Added locale
+---------------------------------------------------------------------------------------------------
+Version: 0.015.8
+Date: Jul 14 2017
+  New Features:
+    - Added EGCombat biter flesh as a science pack to evo reduction if present
+  Misc Changes:
+    - Release
+    - Release
+---------------------------------------------------------------------------------------------------
+Version: 0.015.6
+Date: Jul 2 2017
+  Misc Changes:
+    - Moved options to mod settings system
+---------------------------------------------------------------------------------------------------
+Version: 0.015.5
+Date: Jun 20 2017
+  Misc Changes:
+    - Add new techs to match 0.15 and removed some old ones
+    - Improve mod compatibility
+    - Update to 0.15
+---------------------------------------------------------------------------------------------------
+Version: 0.014.3
+Date: Oct 28 2016
+  Misc Changes:
+    - Update to 0.14
+---------------------------------------------------------------------------------------------------
+Version: 0.012.2
+Date: Jun 4 2016
+  New Features:
+    - Added option to disable turret boost researches
+---------------------------------------------------------------------------------------------------
+Version: 0.012.1
+Date: Dec 6 2015
+  New Features:
+    - Added optional evo research
